@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>G-Worker Dashboard</title>
+    <link
+     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style-2.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- First Container -->
+    <div class="parent-container parent">
+        <div class="container">
+            <h1>To join as a <span class="mark">G-worker</span>, Please enter your full name!</h1>
+            <div input-field>
+                <input type="text" placeholder="Your Name..." id="input">
+                <div id="feedback"></div>
+                <button id="btn" onclick="user()">
+                    Done
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- End of first container -->
+    
+    <!-- Second Container -->
+    <div id="dashboard">
+        <div id="main">
+            <header>
+                <h2>Dashboard</h2>
+            </header>
+            <div id="greet">
+                <h1>
+                    Hello <span id="name"></span>
+                </h1>
+            </div>
+            <div id="task">
+                <div class="top"><h2>Available Tasks</h2></div>
+                <ul type="square">
+                    <li><a href="#">No available task yet!</a></li>
+                </ul>
+                
+            </div>
+            <div id="money">
+                <a href="#">
+                    <button class="cashout-btn">Cashout <i class="fa-regular fa-money-simple-from-bracket"></i></button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
